@@ -3,7 +3,7 @@ import os
 import json
 from datasets import load_dataset
 from collections import Counter
-from config import WIKIPEDIA_DATASET_NAME, WIKIPEDIA_VERSION, TARGET_WORD_LIMIT, PATTERN_RU, PATTERN_EN, PATTERN_BE
+from config import DATASET_NAME, VERSION, TARGET_WORD_LIMIT, PATTERN_RU, PATTERN_EN, PATTERN_BE
 
 
 class LexiconManager():
@@ -19,7 +19,7 @@ class LexiconManager():
     def download_and_calculate(self):
         self.total_words_count = 0
         self.final_dict.clear()
-        dataset = load_dataset(WIKIPEDIA_DATASET_NAME, f'{WIKIPEDIA_VERSION}.{self.lang_code}', split='train', trust_remote_code=True)
+        dataset = load_dataset(DATASET_NAME, f'{VERSION}.{self.lang_code}', split='train', trust_remote_code=True)
         match self.lang_code:
             case 'ru':
                 current_pattern = PATTERN_RU
