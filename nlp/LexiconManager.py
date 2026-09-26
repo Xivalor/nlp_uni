@@ -36,7 +36,7 @@ class LexiconManager():
             if self.total_words_count >= TARGET_WORD_LIMIT:
                 break
         if self.total_words_count < TARGET_WORD_LIMIT:
-            print(f"Внимание: Корпус маловат! Собрано только {self.total_words_count} слов из {TARGET_WORD_LIMIT}")
+            print(f"Warning: Not enough words! Collected only {self.total_words_count} of {TARGET_WORD_LIMIT} words")
         self.final_dict = dict(self.word_counts)
         self.save_words()
 
