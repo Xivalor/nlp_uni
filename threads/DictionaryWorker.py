@@ -1,6 +1,6 @@
 from PySide6.QtCore import QThread, Signal
 from nlp.LexiconManager import LexiconManager
-from config import WIKIPEDIA_DATASET_NAME, WIKIPEDIA_VERSION
+from config import DATASET_NAME, VERSION
 
 
 class DictionaryWorker(QThread):
@@ -18,8 +18,8 @@ class DictionaryWorker(QThread):
         if self.manager.final_dict:
             self.progress.emit('Succesfully loaded dictionary from JSON file')
         else:
-            self.progress.emit(f'Loading dicitonary from {WIKIPEDIA_DATASET_NAME}, version = {WIKIPEDIA_VERSION}')
+            self.progress.emit(f'Loading dicitonary from {DATASET_NAME}, version = {VERSION}')
             self.manager.download_and_calculate()
-            self.progress.emit(f'Succesully loaded dictionary from {WIKIPEDIA_DATASET_NAME}, version = {WIKIPEDIA_VERSION}')
+            self.progress.emit(f'Succesully loaded dictionary from {DATASET_NAME}, version = {VERSION}')
         self.finished.emit(self.manager.final_dict)
             
