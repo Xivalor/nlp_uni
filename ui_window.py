@@ -30,6 +30,8 @@ class MainWindow(QMainWindow):
         self.btn_load_data.clicked.connect(self.load_data)
 
         self.label_status = QLabel("Waiting for choice...")
+        self.label_words_count = QLabel("Words count: waiting for choice...")
+        self.label_unique_words_count = QLabel("Unique words count: waiting for choice...")
 
         self.word_list = QListWidget()
 
@@ -37,6 +39,8 @@ class MainWindow(QMainWindow):
         self.vboxlayout_main.addWidget(self.combo_lang)
         self.vboxlayout_main.addWidget(self.btn_load_data)
         self.vboxlayout_main.addWidget(self.label_status)
+        self.vboxlayout_main.addWidget(self.label_words_count)
+        self.vboxlayout_main.addWidget(self.label_unique_words_count)
         self.vboxlayout_main.addWidget(self.word_list)
 
         central_widget = QWidget()
@@ -60,8 +64,10 @@ class MainWindow(QMainWindow):
         self.label_status.setText(message_text)
 
 
-    def handle_results(self, result_dict):
+    def handle_results(self, result_dict, words_count, unique_words_count):
         self.btn_load_data.setEnabled(True)
         self.word_list.clear()
+        self.label_words_count.setText(f"Words count: {words_count}")
+        self.label_unique_words_count.setText(f"Unique words count: {unique_words_count}")
         ui_lines = [f"{word}: {count}" for word, count in result_dict.items()]
         self.word_list.addItems(ui_lines)

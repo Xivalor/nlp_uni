@@ -1,5 +1,6 @@
 {
     "total_tokens": 5000251,
+    "total_unique_tokens": 314763,
     "dictionary": {
         "литва": 164,
         "официальное": 223,

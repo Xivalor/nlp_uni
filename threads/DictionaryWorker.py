@@ -5,7 +5,7 @@ from config import DATASET_NAME, VERSION
 
 class DictionaryWorker(QThread):
     progress = Signal(str)
-    finished = Signal(dict)
+    finished = Signal(dict, int, int)
 
 
     def __init__(self, lang_code):
@@ -21,5 +21,5 @@ class DictionaryWorker(QThread):
             self.progress.emit(f'Loading dicitonary from {DATASET_NAME}, version = {VERSION}, language = {self.lang_code}')
             self.manager.download_and_calculate()
             self.progress.emit(f'Succesully loaded dictionary from {DATASET_NAME}, version = {VERSION}, language = {self.lang_code}')
-        self.finished.emit(self.manager.final_dict)
+        self.finished.emit(self.manager.final_dict, self.manager.total_words_count, self.manager.total_unique_words_count)
             

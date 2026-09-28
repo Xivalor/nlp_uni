@@ -13,12 +13,14 @@ class LexiconManager():
         self.filename = f'freq_{lang_code}.json'
         self.word_counts = Counter()
         self.total_words_count = 0
+        self.total_unique_words_count = 0
         self.final_dict = {}
         self.load_words()
 
 
     def download_and_calculate(self):
         self.total_words_count = 0
+        self.total_unique_words_count = 0
         self.final_dict.clear()
         dataset = load_dataset(
             DATASET_NAME, 
@@ -44,6 +46,7 @@ class LexiconManager():
         if self.total_words_count < TARGET_WORD_LIMIT:
             print(f"Warning: Not enough words! Collected only {self.total_words_count} of {TARGET_WORD_LIMIT} words")
         self.final_dict = dict(self.word_counts)
+        self.total_unique_words_count = len(self.word_counts)
         self.save_words()
 
 
@@ -51,6 +54,7 @@ class LexiconManager():
         with open(self.filename, 'w', encoding='utf-8') as f:
             package = {
                 'total_tokens': self.total_words_count,
+                'total_unique_tokens': self.total_unique_words_count,
                 'dictionary': self.final_dict
             }
             json.dump(package, f, ensure_ascii=False, indent=4)
@@ -63,6 +67,8 @@ class LexiconManager():
                     package = json.load(f)
                     self.total_words_count = package.get('total_tokens', 0)
                     self.final_dict = package.get('dictionary', {})
+                    self.total_unique_words_count = package.get('total_unique_tokens', 0)
             except Exception:
                 self.final_dict = {}
                 self.total_words_count = 0
+                self.total_unique_words_count = 0
