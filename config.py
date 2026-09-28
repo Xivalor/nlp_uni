@@ -1,14 +1,11 @@
 import re
 
-# Лимиты для токенизатора
 TARGET_WORD_LIMIT = 5_000_000
 MIN_WORD_LENGTH = 2
 
-# Конфигурация датасета
-DATASET_NAME = "wikipedia"
-VERSION = "20220301"
+DATASET_NAME = "wikimedia/wikipedia"
+VERSION = "20231101"
 
-# Паттерны регулярных выражений (компилируем один раз прямо в конфиге)
 PATTERN_RU = re.compile(r"[а-яё]+", re.IGNORECASE)
 PATTERN_EN = re.compile(r"[a-z]+", re.IGNORECASE)
 PATTERN_BE = re.compile(r"[а-яёіў'’]+", re.IGNORECASE)

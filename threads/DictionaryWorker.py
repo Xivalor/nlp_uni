@@ -1,5 +1,5 @@
 from PySide6.QtCore import QThread, Signal
-from nlp import LexiconManager
+from nlp.LexiconManager import LexiconManager
 from config import DATASET_NAME, VERSION
 
 
@@ -16,10 +16,10 @@ class DictionaryWorker(QThread):
 
     def run(self):
         if self.manager.final_dict:
-            self.progress.emit('Succesfully loaded dictionary from JSON file')
+            self.progress.emit(f'Succesfully loaded dictionary from JSON file, language = {self.lang_code}')
         else:
-            self.progress.emit(f'Loading dicitonary from {DATASET_NAME}, version = {VERSION}')
+            self.progress.emit(f'Loading dicitonary from {DATASET_NAME}, version = {VERSION}, language = {self.lang_code}')
             self.manager.download_and_calculate()
-            self.progress.emit(f'Succesully loaded dictionary from {DATASET_NAME}, version = {VERSION}')
+            self.progress.emit(f'Succesully loaded dictionary from {DATASET_NAME}, version = {VERSION}, language = {self.lang_code}')
         self.finished.emit(self.manager.final_dict)
             
