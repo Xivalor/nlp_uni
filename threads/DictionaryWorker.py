@@ -13,7 +13,7 @@ class DictionaryWorker(QThread):
         self.lang_code = lang_code
         self.manager = LexiconManager(lang_code)
 
-    
+
     def run(self):
         if self.manager.final_dict:
             self.progress.emit('Succesfully loaded dictionary from JSON file')
