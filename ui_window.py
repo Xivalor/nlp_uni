@@ -1,3 +1,4 @@
+from PySide6.QtWidgets import QLineEdit
 from PySide6.QtWidgets import (
     QMainWindow,
     QWidget, 
@@ -12,7 +13,7 @@ from PySide6.QtWidgets import (
     QGroupBox,
 )
 
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, QTimer
 
 from threads.DictionaryWorker import DictionaryWorker
 from nlp.LexiconManager import LexiconManager 
@@ -71,6 +72,15 @@ class MainWindow(QMainWindow):
         self.hbox_sorting.addWidget(self.box_type)
         self.hbox_sorting.addWidget(self.box_order)
 
+        self.search_timer = QTimer()
+        self.search_timer.setSingleShot(True)
+        self.search_timer.setInterval(300)
+        self.search_timer.timeout.connect(self.refresh_list)
+
+        self.search_input = QLineEdit()
+        self.search_input.setPlaceholderText("Input text to find")
+        self.search_input.textChanged.connect(self.search_timer.start)
+
         self.btn_load_data = QPushButton("Load data")
         self.btn_load_data.clicked.connect(self.load_data)
 
@@ -84,6 +94,7 @@ class MainWindow(QMainWindow):
         self.vboxlayout_main.addWidget(self.label_lang)
         self.vboxlayout_main.addWidget(self.combo_lang)
         self.vboxlayout_main.addLayout(self.hbox_sorting)
+        self.vboxlayout_main.addWidget(self.search_input)
         self.vboxlayout_main.addWidget(self.btn_load_data)
         self.vboxlayout_main.addWidget(self.label_status)
         self.vboxlayout_main.addWidget(self.label_words_count)
@@ -130,5 +141,9 @@ class MainWindow(QMainWindow):
 
         self.word_list.clear()
         sorted_items = self.active_manager.get_sorted_words(by_freq, is_reverse)
-        ui_lines = [f"{word}: {count}" for word, count in sorted_items]
+        search_text = self.search_input.text().lower()
+        if search_text:
+            ui_lines = [f"{word}: {count}" for word, count in sorted_items if search_text in word]
+        else:
+            ui_lines = [f"{word}: {count}" for word, count in sorted_items]
         self.word_list.addItems(ui_lines)
