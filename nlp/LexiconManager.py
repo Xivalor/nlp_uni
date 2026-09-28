@@ -20,7 +20,12 @@ class LexiconManager():
     def download_and_calculate(self):
         self.total_words_count = 0
         self.final_dict.clear()
-        dataset = load_dataset(DATASET_NAME, f'{VERSION}.{self.lang_code}', split='train', trust_remote_code=True)
+        dataset = load_dataset(
+            DATASET_NAME, 
+            name=f'{VERSION}.{self.lang_code}', 
+            split='train', 
+            streaming=True
+        )
         match self.lang_code:
             case 'ru':
                 current_pattern = PATTERN_RU

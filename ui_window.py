@@ -11,8 +11,8 @@ from PySide6.QtWidgets import (
 
 from PySide6.QtCore import Qt
 
-from threads import DictionaryWorker
-from nlp import LexiconManager 
+from threads.DictionaryWorker import DictionaryWorker
+from nlp.LexiconManager import LexiconManager 
 
 
 class MainWindow(QMainWindow):
@@ -24,23 +24,27 @@ class MainWindow(QMainWindow):
         self.resize(550, 600)
 
         self.combo_lang = QComboBox()
-        self.combo_lang.addItems(["ru, en, be"])
+        self.combo_lang.addItems(["ru", "en", "be"])
 
         self.btn_load_data = QPushButton("Load data")
-        self.btn_load_data.connect(self.load_data)
+        self.btn_load_data.clicked.connect(self.load_data)
 
         self.label_status = QLabel("Waiting for choice...")
 
         self.word_list = QListWidget()
 
         self.vboxlayout_main = QVBoxLayout()
-        self.vboxlayout_main.add(self.combo_lang)
-        self.vboxlayout_main.add(self.btn_load_data)
-        self.vboxlayout_main.add(self.label_status)
-        self.vboxlayout_main.add(self.word_list)
+        self.vboxlayout_main.addWidget(self.combo_lang)
+        self.vboxlayout_main.addWidget(self.btn_load_data)
+        self.vboxlayout_main.addWidget(self.label_status)
+        self.vboxlayout_main.addWidget(self.word_list)
+
+        central_widget = QWidget()
+        central_widget.setLayout(self.vboxlayout_main)
+        self.setCentralWidget(central_widget)
 
 
-    def start_processing(self):
+    def load_data(self):
         selected_lang = self.combo_lang.currentText()
 
         self.worker = DictionaryWorker(selected_lang)
@@ -60,4 +64,4 @@ class MainWindow(QMainWindow):
         self.btn_load_data.setEnabled(True)
         self.word_list.clear()
         ui_lines = [f"{word}: {count}" for word, count in result_dict.items()]
-        self.word_list.addItems(ui_lines[:500])
+        self.word_list.addItems(ui_lines)
