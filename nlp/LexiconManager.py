@@ -7,6 +7,7 @@ from config import DATASET_NAME, VERSION, TARGET_WORD_LIMIT, PATTERN_RU, PATTERN
 
 
 class LexiconManager():
+
     def __init__(self, lang_code):
         self.lang_code = lang_code
         self.filename = f'freq_{lang_code}.json'
