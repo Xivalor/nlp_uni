@@ -17,6 +17,8 @@ from PySide6.QtCore import Qt
 from threads.DictionaryWorker import DictionaryWorker
 from nlp.LexiconManager import LexiconManager 
 
+from config import LANGUAGES
+
 
 class MainWindow(QMainWindow):
 
@@ -28,7 +30,7 @@ class MainWindow(QMainWindow):
 
         self.label_lang = QLabel("Select language:")
         self.combo_lang = QComboBox()
-        self.combo_lang.addItems(["ru", "en", "be"])
+        self.combo_lang.addItems(LANGUAGES.keys())
 
         self.group_type = QButtonGroup(self)
         self.radio_freq = QRadioButton("By frequency")
@@ -92,9 +94,8 @@ class MainWindow(QMainWindow):
         central_widget.setLayout(self.vboxlayout_main)
         self.setCentralWidget(central_widget)
 
-
     def load_data(self):
-        selected_lang = self.combo_lang.currentText()
+        selected_lang = LANGUAGES[self.combo_lang.currentText()]
 
         self.worker = DictionaryWorker(selected_lang)
 
