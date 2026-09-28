@@ -72,3 +72,10 @@ class LexiconManager():
                 self.final_dict = {}
                 self.total_words_count = 0
                 self.total_unique_words_count = 0
+
+    
+    def get_sorted_words(self, by_frequency: bool, reverse: bool) -> dict:
+        if by_frequency:
+            return sorted(self.final_dict.items(), key=lambda x: (x[1], x[0]), reverse=reverse)
+        else:
+            return sorted(self.final_dict.items(), key=lambda x: (x[0], x[1]), reverse=reverse)
