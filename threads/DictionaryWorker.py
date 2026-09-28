@@ -1,5 +1,5 @@
 from PySide6.QtCore import QThread, Signal
-from nlp.LexiconManager import LexiconManager
+from nlp import LexiconManager
 from config import DATASET_NAME, VERSION
 
 
