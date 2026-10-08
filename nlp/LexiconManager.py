@@ -79,3 +79,30 @@ class LexiconManager():
             return sorted(self.final_dict.items(), key=lambda x: (x[1], x[0]), reverse=reverse)
         else:
             return sorted(self.final_dict.items(), key=lambda x: (x[0], x[1]), reverse=reverse)
+    
+    
+    def edit_dict(self, word=None, new_word=None, operation=None):
+        match operation:
+            case "Add word":
+                if word not in self.final_dict:
+                    self.final_dict[word] = 0
+                else:
+                    self.final_dict[word] += 1
+
+                self.total_words_count += 1
+
+            case "Delete word":
+                if word in self.final_dict:
+                    self.total_words_count -= self.final_dict[word]
+                    self.final_dict.pop(word)
+
+            case "Edit word":
+                if word in self.final_dict:
+                    self.final_dict[new_word] = (
+                        self.final_dict.get(new_word, 0) + self.final_dict[word]
+                    )
+                    self.final_dict.pop(word)
+
+        self.total_unique_words_count = len(self.final_dict)
+
+        self.save_words()

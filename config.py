@@ -15,3 +15,9 @@ LANGUAGES = {
 PATTERN_RU = re.compile(r"[а-яё]+", re.IGNORECASE)
 PATTERN_EN = re.compile(r"[a-z]+", re.IGNORECASE)
 PATTERN_BE = re.compile(r"[а-яёіў'’]+", re.IGNORECASE)
+
+OPERATIONS = {
+    "Add word",
+    "Edit word",
+    "Delete word",
+}
