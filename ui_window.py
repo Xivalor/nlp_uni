@@ -20,6 +20,7 @@ from PySide6.QtCore import Qt, QTimer
 from threads.DictionaryWorker import DictionaryWorker
 from nlp.LexiconManager import LexiconManager 
 from word_dialog import WordDialog
+from text_dialog import TextDialog
 
 from config import LANGUAGES
 
@@ -97,6 +98,10 @@ class MainWindow(QMainWindow):
         self.btn_edit_dict.setEnabled(False)
         self.btn_edit_dict.clicked.connect(self.edit_dict_dialog)
 
+        self.btn_add_text = QPushButton("Add text")
+        self.btn_add_text.setEnabled(False)
+        self.btn_add_text.clicked.connect(self.add_text_dialog)
+
         self.vboxlayout_main = QVBoxLayout()
         self.vboxlayout_main.addWidget(self.label_lang)
         self.vboxlayout_main.addWidget(self.combo_lang)
@@ -108,6 +113,7 @@ class MainWindow(QMainWindow):
         self.vboxlayout_main.addWidget(self.label_unique_words_count)
         self.vboxlayout_main.addWidget(self.word_list)
         self.vboxlayout_main.addWidget(self.btn_edit_dict)
+        self.vboxlayout_main.addWidget(self.btn_add_text)
 
         central_widget = QWidget()
         central_widget.setLayout(self.vboxlayout_main)
@@ -147,6 +153,28 @@ class MainWindow(QMainWindow):
             self.refresh_list()
 
 
+    def add_text_dialog(self):
+        dialog = TextDialog(self)
+
+        if dialog.exec():
+            text = dialog.text_edit.toPlainText()
+
+            if not text.strip():
+                return
+
+            self.active_manager.add_text(text)
+
+            self.label_words_count.setText(
+                f"Words count: {self.active_manager.total_words_count}"
+            )
+
+            self.label_unique_words_count.setText(
+                f"Unique words count: {self.active_manager.total_unique_words_count}"
+            )
+
+            self.refresh_list()
+
+
     def load_data(self):
         selected_lang = LANGUAGES[self.combo_lang.currentText()]
 
@@ -166,6 +194,7 @@ class MainWindow(QMainWindow):
     def handle_results(self, result_dict, words_count, unique_words_count):
         self.btn_load_data.setEnabled(True)
         self.btn_edit_dict.setEnabled(True)
+        self.btn_add_text.setEnabled(True)
         self.word_list.clear()
         self.label_words_count.setText(f"Words count: {words_count}")
         self.label_unique_words_count.setText(f"Unique words count: {unique_words_count}")

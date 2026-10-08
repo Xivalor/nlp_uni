@@ -106,3 +106,24 @@ class LexiconManager():
         self.total_unique_words_count = len(self.final_dict)
 
         self.save_words()
+
+    
+    def add_text(self, text):
+        match self.lang_code:
+            case 'ru':
+                current_pattern = PATTERN_RU
+            case 'be':
+                current_pattern = PATTERN_BE
+            case 'en':
+                current_pattern = PATTERN_EN
+
+        words_list = current_pattern.findall(text)
+        words_list = [word.lower() for word in words_list]
+
+        for word in words_list:
+            self.final_dict[word] = self.final_dict.get(word, 0) + 1
+
+        self.total_words_count += len(words_list)
+        self.total_unique_words_count = len(self.final_dict)
+
+        self.save_words()
