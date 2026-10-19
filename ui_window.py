@@ -8,6 +8,7 @@ from PySide6.QtWidgets import (
     QListWidget, 
     QLabel, 
     QComboBox,
+    QCheckBox,
     QRadioButton,
     QButtonGroup,
     QGroupBox,
@@ -22,7 +23,7 @@ from nlp.LexiconManager import LexiconManager
 from word_dialog import WordDialog
 from text_dialog import TextDialog
 
-from config import LANGUAGES
+from config import LANGUAGES, LEMMA_LANGUAGES
 
 
 class MainWindow(QMainWindow):
@@ -36,6 +37,10 @@ class MainWindow(QMainWindow):
         self.label_lang = QLabel("Select language:")
         self.combo_lang = QComboBox()
         self.combo_lang.addItems(LANGUAGES.keys())
+        self.combo_lang.currentTextChanged.connect(self.update_lemma_state)
+
+        self.check_lemma = QCheckBox("Lemmatize words (simplemma)")
+        self.check_lemma.setToolTip("Convert word forms to their base form (lemma)")
 
         self.group_type = QButtonGroup(self)
         self.radio_freq = QRadioButton("By frequency")
@@ -83,6 +88,9 @@ class MainWindow(QMainWindow):
 
         self.search_input = QLineEdit()
         self.search_input.setPlaceholderText("Input text to find")
+        self.search_input.setToolTip(
+            "Search by a substring. If the dictionary is lemmatized, the query is lemmatized too"
+        )
         self.search_input.textChanged.connect(self.search_timer.start)
 
         self.btn_load_data = QPushButton("Load data")
@@ -105,6 +113,7 @@ class MainWindow(QMainWindow):
         self.vboxlayout_main = QVBoxLayout()
         self.vboxlayout_main.addWidget(self.label_lang)
         self.vboxlayout_main.addWidget(self.combo_lang)
+        self.vboxlayout_main.addWidget(self.check_lemma)
         self.vboxlayout_main.addLayout(self.hbox_sorting)
         self.vboxlayout_main.addWidget(self.search_input)
         self.vboxlayout_main.addWidget(self.btn_load_data)
@@ -175,10 +184,18 @@ class MainWindow(QMainWindow):
             self.refresh_list()
 
 
+    def update_lemma_state(self, lang_name):
+        supported = LANGUAGES.get(lang_name) in LEMMA_LANGUAGES
+        self.check_lemma.setEnabled(supported)
+        if not supported:
+            self.check_lemma.setChecked(False)
+            self.check_lemma.setToolTip("Lemmatization is not available for this language")
+
+
     def load_data(self):
         selected_lang = LANGUAGES[self.combo_lang.currentText()]
 
-        self.worker = DictionaryWorker(selected_lang)
+        self.worker = DictionaryWorker(selected_lang, lemmatize=self.check_lemma.isChecked())
 
         self.worker.progress.connect(self.update_status)        
         self.worker.finished.connect(self.handle_results)
@@ -213,9 +230,14 @@ class MainWindow(QMainWindow):
 
         self.word_list.clear()
         sorted_items = self.active_manager.get_sorted_words(by_freq, is_reverse)
-        search_text = self.search_input.text().lower()
+        search_text = self.search_input.text().strip().lower()
         if search_text:
-            ui_lines = [f"{word}: {count}" for word, count in sorted_items if search_text in word]
+            search_text = self.active_manager.lemmatizer.lemmatize_query(search_text).lower()
+            ui_lines = [
+                f"{word}: {count}"
+                for word, count in sorted_items
+                if search_text in word.lower()
+            ]
         else:
             ui_lines = [f"{word}: {count}" for word, count in sorted_items]
         self.word_list.addItems(ui_lines)

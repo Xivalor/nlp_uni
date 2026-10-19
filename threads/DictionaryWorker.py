@@ -8,10 +8,10 @@ class DictionaryWorker(QThread):
     finished = Signal(dict, int, int)
 
 
-    def __init__(self, lang_code):
+    def __init__(self, lang_code, lemmatize=False):
         super().__init__()
         self.lang_code = lang_code
-        self.manager = LexiconManager(lang_code)
+        self.manager = LexiconManager(lang_code, lemmatize=lemmatize)
 
 
     def run(self):
@@ -21,5 +21,9 @@ class DictionaryWorker(QThread):
             self.progress.emit(f'Loading dicitonary from {DATASET_NAME}, version = {VERSION}, language = {self.lang_code}')
             self.manager.download_and_calculate()
             self.progress.emit(f'Succesully loaded dictionary from {DATASET_NAME}, version = {VERSION}, language = {self.lang_code}')
+        if self.manager.lemmatizer.enabled:
+            self.progress.emit(f'Lemmatization is enabled, language = {self.lang_code}')
+        else:
+            self.progress.emit(f'Lemmatization is not available for language = {self.lang_code}')
         self.finished.emit(self.manager.final_dict, self.manager.total_words_count, self.manager.total_unique_words_count)
             
