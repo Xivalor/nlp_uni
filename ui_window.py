@@ -1,3 +1,5 @@
+import os
+
 from PySide6.QtWidgets import QLineEdit
 from PySide6.QtWidgets import (
     QMainWindow,
@@ -13,6 +15,7 @@ from PySide6.QtWidgets import (
     QButtonGroup,
     QGroupBox,
     QDialog,
+    QFileDialog,
     QMessageBox,
 )
 
@@ -110,6 +113,10 @@ class MainWindow(QMainWindow):
         self.btn_add_text.setEnabled(False)
         self.btn_add_text.clicked.connect(self.add_text_dialog)
 
+        self.btn_load_file = QPushButton("Load from file")
+        self.btn_load_file.setEnabled(False)
+        self.btn_load_file.clicked.connect(self.load_file_dialog)
+
         self.vboxlayout_main = QVBoxLayout()
         self.vboxlayout_main.addWidget(self.label_lang)
         self.vboxlayout_main.addWidget(self.combo_lang)
@@ -123,6 +130,7 @@ class MainWindow(QMainWindow):
         self.vboxlayout_main.addWidget(self.word_list)
         self.vboxlayout_main.addWidget(self.btn_edit_dict)
         self.vboxlayout_main.addWidget(self.btn_add_text)
+        self.vboxlayout_main.addWidget(self.btn_load_file)
 
         central_widget = QWidget()
         central_widget.setLayout(self.vboxlayout_main)
@@ -151,14 +159,7 @@ class MainWindow(QMainWindow):
 
             self.active_manager.edit_dict(word=word, new_word=new_word, operation=operation)
 
-            self.label_words_count.setText(
-                f"Words count: {self.active_manager.total_words_count}"
-            )
-
-            self.label_unique_words_count.setText(
-                f"Unique words count: {self.active_manager.total_unique_words_count}"
-            )
-
+            self.update_counts()
             self.refresh_list()
 
 
@@ -173,15 +174,46 @@ class MainWindow(QMainWindow):
 
             self.active_manager.add_text(text)
 
-            self.label_words_count.setText(
-                f"Words count: {self.active_manager.total_words_count}"
-            )
-
-            self.label_unique_words_count.setText(
-                f"Unique words count: {self.active_manager.total_unique_words_count}"
-            )
-
+            self.update_counts()
             self.refresh_list()
+
+
+    def load_file_dialog(self):
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            "Open file with words",
+            "",
+            "Text files (*.txt);;All files (*)"
+        )
+        if not path:
+            return
+
+        self.load_file(path)
+
+
+    def load_file(self, path):
+        added_words = self.active_manager.add_file(path)
+        filename = os.path.basename(path)
+
+        if added_words:
+            self.label_status.setText(
+                f"Added {added_words} words from {filename}, language = {self.active_manager.lang_code}"
+            )
+        else:
+            self.label_status.setText(f"Nothing to add from {filename}: file is empty")
+
+        self.update_counts()
+        self.refresh_list()
+
+
+    def update_counts(self):
+        self.label_words_count.setText(
+            f"Words count: {self.active_manager.total_words_count}"
+        )
+
+        self.label_unique_words_count.setText(
+            f"Unique words count: {self.active_manager.total_unique_words_count}"
+        )
 
 
     def update_lemma_state(self, lang_name):
@@ -212,6 +244,7 @@ class MainWindow(QMainWindow):
         self.btn_load_data.setEnabled(True)
         self.btn_edit_dict.setEnabled(True)
         self.btn_add_text.setEnabled(True)
+        self.btn_load_file.setEnabled(True)
         self.word_list.clear()
         self.label_words_count.setText(f"Words count: {words_count}")
         self.label_unique_words_count.setText(f"Unique words count: {unique_words_count}")
