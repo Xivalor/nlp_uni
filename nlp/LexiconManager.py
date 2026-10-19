@@ -148,3 +148,27 @@ class LexiconManager():
         self.total_unique_words_count = len(self.final_dict)
 
         self.save_words()
+
+
+    def add_file(self, path) -> int:
+        """Читает текстовый файл и добавляет его слова в словарь.
+        Возвращает количество добавленных слов."""
+        text = self.read_file(path)
+        if not text.strip():
+            return 0
+
+        words_before = self.total_words_count
+        self.add_text(text)
+        return self.total_words_count - words_before
+
+
+    @staticmethod
+    def read_file(path) -> str:
+        for encoding in ('utf-8', 'cp1251'):
+            try:
+                with open(path, 'r', encoding=encoding) as f:
+                    return f.read()
+            except UnicodeDecodeError:
+                continue
+        with open(path, 'r', encoding='utf-8', errors='replace') as f:
+            return f.read()
