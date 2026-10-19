@@ -3,14 +3,26 @@ import os
 import json
 from datasets import load_dataset
 from collections import Counter
-from config import DATASET_NAME, VERSION, TARGET_WORD_LIMIT, PATTERN_RU, PATTERN_EN, PATTERN_BE
+from config import (
+    DATASET_NAME,
+    VERSION,
+    TARGET_WORD_LIMIT,
+    PATTERN_RU,
+    PATTERN_EN,
+    PATTERN_BE,
+    LEMMA_FILENAME_SUFFIX,
+)
+from nlp.lemmatizer import Lemmatizer
 
 
 class LexiconManager():
 
-    def __init__(self, lang_code):
+    def __init__(self, lang_code, lemmatize=False):
         self.lang_code = lang_code
-        self.filename = f'freq_{lang_code}.json'
+        self.lemmatize_enabled = lemmatize
+        self.lemmatizer = Lemmatizer(lang_code, enabled=lemmatize)
+        suffix = LEMMA_FILENAME_SUFFIX if self.lemmatizer.enabled else ''
+        self.filename = f'freq_{lang_code}{suffix}.json'
         self.word_counts = Counter()
         self.total_words_count = 0
         self.total_unique_words_count = 0
@@ -38,7 +50,7 @@ class LexiconManager():
         for article in dataset:
             text_data = article['text']
             words_list = current_pattern.findall(text_data)
-            words_list = [word.lower() for word in words_list]
+            words_list = self.normalize_words(words_list)
             self.word_counts.update(words_list)
             self.total_words_count += len(words_list)
             if self.total_words_count >= TARGET_WORD_LIMIT:
@@ -50,11 +62,20 @@ class LexiconManager():
         self.save_words()
 
 
+    def normalize_words(self, words_list) -> list:
+        """Приводит слова к нижнему регистру и, если включено, к леммам."""
+        words_list = [word.lower() for word in words_list]
+        if self.lemmatizer.enabled:
+            words_list = [self.lemmatizer.lemmatize(word) for word in words_list]
+        return words_list
+
+
     def save_words(self):
         with open(self.filename, 'w', encoding='utf-8') as f:
             package = {
                 'total_tokens': self.total_words_count,
                 'total_unique_tokens': self.total_unique_words_count,
+                'lemmatized': self.lemmatizer.enabled,
                 'dictionary': self.final_dict
             }
             json.dump(package, f, ensure_ascii=False, indent=4)
@@ -118,7 +139,7 @@ class LexiconManager():
                 current_pattern = PATTERN_EN
 
         words_list = current_pattern.findall(text)
-        words_list = [word.lower() for word in words_list]
+        words_list = self.normalize_words(words_list)
 
         for word in words_list:
             self.final_dict[word] = self.final_dict.get(word, 0) + 1
