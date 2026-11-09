@@ -1,0 +1,6008 @@
+{
+  "ru": {
+    "lang": "ru",
+    "texts": [
+      {
+        "key": "ru_1",
+        "title": "Литва",
+        "file": "rgr3/data/texts/ru_1.txt",
+        "raw_tokens": 5332,
+        "raw_unique_tokens": 2579,
+        "normalized_tokens": 5332,
+        "normalized_unique_tokens": 1832,
+        "tokens_after_stopwords": 3990,
+        "unique_tokens": 1745,
+        "top_words": [
+          {
+            "word": "год",
+            "count": 163
+          },
+          {
+            "word": "литва",
+            "count": 159
+          },
+          {
+            "word": "литовский",
+            "count": 96
+          },
+          {
+            "word": "страна",
+            "count": 36
+          },
+          {
+            "word": "язык",
+            "count": 32
+          },
+          {
+            "word": "население",
+            "count": 29
+          },
+          {
+            "word": "территория",
+            "count": 28
+          },
+          {
+            "word": "государство",
+            "count": 25
+          },
+          {
+            "word": "ссср",
+            "count": 18
+          },
+          {
+            "word": "княжество",
+            "count": 18
+          },
+          {
+            "word": "великий",
+            "count": 18
+          },
+          {
+            "word": "польский",
+            "count": 17
+          },
+          {
+            "word": "советский",
+            "count": 17
+          },
+          {
+            "word": "сила",
+            "count": 17
+          },
+          {
+            "word": "километр",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "key": "ru_2",
+        "title": "Кавказские Минеральные Воды",
+        "file": "rgr3/data/texts/ru_2.txt",
+        "raw_tokens": 5446,
+        "raw_unique_tokens": 2507,
+        "normalized_tokens": 5446,
+        "normalized_unique_tokens": 1750,
+        "tokens_after_stopwords": 4106,
+        "unique_tokens": 1659,
+        "top_words": [
+          {
+            "word": "вода",
+            "count": 120
+          },
+          {
+            "word": "минеральный",
+            "count": 87
+          },
+          {
+            "word": "год",
+            "count": 83
+          },
+          {
+            "word": "кавказский",
+            "count": 54
+          },
+          {
+            "word": "курорт",
+            "count": 52
+          },
+          {
+            "word": "кмв",
+            "count": 51
+          },
+          {
+            "word": "пятигорск",
+            "count": 37
+          },
+          {
+            "word": "источник",
+            "count": 37
+          },
+          {
+            "word": "район",
+            "count": 34
+          },
+          {
+            "word": "кисловодск",
+            "count": 28
+          },
+          {
+            "word": "курортный",
+            "count": 24
+          },
+          {
+            "word": "регион",
+            "count": 23
+          },
+          {
+            "word": "директор",
+            "count": 22
+          },
+          {
+            "word": "территория",
+            "count": 21
+          },
+          {
+            "word": "гора",
+            "count": 20
+          }
+        ]
+      }
+    ],
+    "one_hot": {
+      "vocabulary_size": 2992,
+      "ones_in_matrix": 3404,
+      "common_unique_words": 412,
+      "union_unique_words": 2992,
+      "jaccard_similarity": 0.13770053475935828,
+      "cosine_similarity": 0.24214544691304948,
+      "multiset_intersection_size": 900,
+      "common_words": [
+        {
+          "word": "год",
+          "count_text_1": 163,
+          "count_text_2": 83,
+          "min_count": 83
+        },
+        {
+          "word": "территория",
+          "count_text_1": 28,
+          "count_text_2": 21,
+          "min_count": 21
+        },
+        {
+          "word": "первый",
+          "count_text_1": 15,
+          "count_text_2": 14,
+          "min_count": 14
+        },
+        {
+          "word": "часть",
+          "count_text_1": 12,
+          "count_text_2": 16,
+          "min_count": 12
+        },
+        {
+          "word": "государственный",
+          "count_text_1": 14,
+          "count_text_2": 10,
+          "min_count": 10
+        },
+        {
+          "word": "край",
+          "count_text_1": 10,
+          "count_text_2": 14,
+          "min_count": 10
+        },
+        {
+          "word": "состав",
+          "count_text_1": 12,
+          "count_text_2": 10,
+          "min_count": 10
+        },
+        {
+          "word": "город",
+          "count_text_1": 8,
+          "count_text_2": 17,
+          "min_count": 8
+        },
+        {
+          "word": "один",
+          "count_text_1": 8,
+          "count_text_2": 10,
+          "min_count": 8
+        },
+        {
+          "word": "февраль",
+          "count_text_1": 10,
+          "count_text_2": 8,
+          "min_count": 8
+        },
+        {
+          "word": "военный",
+          "count_text_1": 11,
+          "count_text_2": 7,
+          "min_count": 7
+        },
+        {
+          "word": "тысяча",
+          "count_text_1": 7,
+          "count_text_2": 9,
+          "min_count": 7
+        },
+        {
+          "word": "время",
+          "count_text_1": 9,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "километр",
+          "count_text_1": 16,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "март",
+          "count_text_1": 6,
+          "count_text_2": 8,
+          "min_count": 6
+        },
+        {
+          "word": "российский",
+          "count_text_1": 6,
+          "count_text_2": 11,
+          "min_count": 6
+        },
+        {
+          "word": "россия",
+          "count_text_1": 6,
+          "count_text_2": 9,
+          "min_count": 6
+        },
+        {
+          "word": "центр",
+          "count_text_1": 6,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "автомагистраль",
+          "count_text_1": 9,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "декабрь",
+          "count_text_1": 7,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "западный",
+          "count_text_1": 6,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "известный",
+          "count_text_1": 5,
+          "count_text_2": 6,
+          "min_count": 5
+        },
+        {
+          "word": "исследование",
+          "count_text_1": 5,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "книга",
+          "count_text_1": 5,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "красный",
+          "count_text_1": 5,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "место",
+          "count_text_1": 12,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "находиться",
+          "count_text_1": 5,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "новый",
+          "count_text_1": 5,
+          "count_text_2": 6,
+          "min_count": 5
+        },
+        {
+          "word": "составлять",
+          "count_text_1": 10,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "управление",
+          "count_text_1": 5,
+          "count_text_2": 13,
+          "min_count": 5
+        },
+        {
+          "word": "участок",
+          "count_text_1": 6,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "человек",
+          "count_text_1": 7,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "администрация",
+          "count_text_1": 4,
+          "count_text_2": 9,
+          "min_count": 4
+        },
+        {
+          "word": "восточный",
+          "count_text_1": 4,
+          "count_text_2": 8,
+          "min_count": 4
+        },
+        {
+          "word": "граница",
+          "count_text_1": 4,
+          "count_text_2": 17,
+          "min_count": 4
+        },
+        {
+          "word": "группа",
+          "count_text_1": 4,
+          "count_text_2": 5,
+          "min_count": 4
+        },
+        {
+          "word": "два",
+          "count_text_1": 5,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "дорога",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "июль",
+          "count_text_1": 6,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "крупнейший",
+          "count_text_1": 5,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "май",
+          "count_text_1": 5,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "море",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "население",
+          "count_text_1": 29,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "отдельный",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "официальный",
+          "count_text_1": 4,
+          "count_text_2": 6,
+          "min_count": 4
+        },
+        {
+          "word": "площадь",
+          "count_text_1": 4,
+          "count_text_2": 5,
+          "min_count": 4
+        },
+        {
+          "word": "проект",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "работа",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "река",
+          "count_text_1": 4,
+          "count_text_2": 12,
+          "min_count": 4
+        },
+        {
+          "word": "республика",
+          "count_text_1": 14,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "рост",
+          "count_text_1": 9,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "сантиметр",
+          "count_text_1": 9,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "совет",
+          "count_text_1": 8,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "советский",
+          "count_text_1": 17,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "стать",
+          "count_text_1": 9,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "учреждение",
+          "count_text_1": 4,
+          "count_text_2": 5,
+          "min_count": 4
+        },
+        {
+          "word": "число",
+          "count_text_1": 4,
+          "count_text_2": 5,
+          "min_count": 4
+        },
+        {
+          "word": "внутренний",
+          "count_text_1": 3,
+          "count_text_2": 5,
+          "min_count": 3
+        },
+        {
+          "word": "войска",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "войско",
+          "count_text_1": 4,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "второй",
+          "count_text_1": 4,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "движение",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "день",
+          "count_text_1": 3,
+          "count_text_2": 10,
+          "min_count": 3
+        },
+        {
+          "word": "долина",
+          "count_text_1": 3,
+          "count_text_2": 10,
+          "min_count": 3
+        },
+        {
+          "word": "железный",
+          "count_text_1": 3,
+          "count_text_2": 7,
+          "min_count": 3
+        },
+        {
+          "word": "закон",
+          "count_text_1": 7,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "запад",
+          "count_text_1": 3,
+          "count_text_2": 6,
+          "min_count": 3
+        },
+        {
+          "word": "земля",
+          "count_text_1": 16,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "зона",
+          "count_text_1": 3,
+          "count_text_2": 15,
+          "min_count": 3
+        },
+        {
+          "word": "иметь",
+          "count_text_1": 3,
+          "count_text_2": 9,
+          "min_count": 3
+        },
+        {
+          "word": "использоваться",
+          "count_text_1": 4,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "история",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "количество",
+          "count_text_1": 3,
+          "count_text_2": 5,
+          "min_count": 3
+        },
+        {
+          "word": "местный",
+          "count_text_1": 5,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "месяц",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "миллиметр",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "министр",
+          "count_text_1": 3,
+          "count_text_2": 6,
+          "min_count": 3
+        },
+        {
+          "word": "наиболее",
+          "count_text_1": 3,
+          "count_text_2": 5,
+          "min_count": 3
+        },
+        {
+          "word": "начало",
+          "count_text_1": 8,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "начаться",
+          "count_text_1": 4,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "область",
+          "count_text_1": 5,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "общий",
+          "count_text_1": 3,
+          "count_text_2": 5,
+          "min_count": 3
+        },
+        {
+          "word": "основной",
+          "count_text_1": 7,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "охрана",
+          "count_text_1": 3,
+          "count_text_2": 11,
+          "min_count": 3
+        },
+        {
+          "word": "последний",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "правительство",
+          "count_text_1": 9,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "президент",
+          "count_text_1": 8,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "признать",
+          "count_text_1": 8,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "составить",
+          "count_text_1": 13,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "уровень",
+          "count_text_1": 8,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "условие",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "юго",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "январь",
+          "count_text_1": 5,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "август",
+          "count_text_1": 4,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "апрель",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "больший",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "брат",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "возможность",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "восток",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "временный",
+          "count_text_1": 6,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "всемирный",
+          "count_text_1": 6,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "выделяться",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "высокий",
+          "count_text_1": 7,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "выход",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "генерал",
+          "count_text_1": 2,
+          "count_text_2": 8,
+          "min_count": 2
+        },
+        {
+          "word": "главный",
+          "count_text_1": 2,
+          "count_text_2": 14,
+          "min_count": 2
+        },
+        {
+          "word": "данные",
+          "count_text_1": 16,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "договор",
+          "count_text_1": 4,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "зима",
+          "count_text_1": 2,
+          "count_text_2": 9,
+          "min_count": 2
+        },
+        {
+          "word": "издать",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "имя",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "категория",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "качество",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "князь",
+          "count_text_1": 7,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "лесной",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "лето",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "линия",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "литр",
+          "count_text_1": 2,
+          "count_text_2": 9,
+          "min_count": 2
+        },
+        {
+          "word": "миллион",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "минеральный",
+          "count_text_1": 2,
+          "count_text_2": 87,
+          "min_count": 2
+        },
+        {
+          "word": "москва",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "называть",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "населённый",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "наука",
+          "count_text_1": 9,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "начать",
+          "count_text_1": 4,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "образ",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "образование",
+          "count_text_1": 4,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "одновременно",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "округ",
+          "count_text_1": 2,
+          "count_text_2": 11,
+          "min_count": 2
+        },
+        {
+          "word": "октябрь",
+          "count_text_1": 4,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "основа",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "особенно",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "особый",
+          "count_text_1": 2,
+          "count_text_2": 5,
+          "min_count": 2
+        },
+        {
+          "word": "относительно",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "отношение",
+          "count_text_1": 8,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "период",
+          "count_text_1": 4,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "поздний",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "полномочие",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "положение",
+          "count_text_1": 2,
+          "count_text_2": 7,
+          "min_count": 2
+        },
+        {
+          "word": "представитель",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "принять",
+          "count_text_1": 13,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "происходить",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "расположенный",
+          "count_text_1": 2,
+          "count_text_2": 6,
+          "min_count": 2
+        },
+        {
+          "word": "результат",
+          "count_text_1": 6,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "руководство",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "русский",
+          "count_text_1": 11,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "сам",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "связь",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "север",
+          "count_text_1": 2,
+          "count_text_2": 5,
+          "min_count": 2
+        },
+        {
+          "word": "согласно",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "создать",
+          "count_text_1": 6,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "сравнение",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "средний",
+          "count_text_1": 7,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "ссср",
+          "count_text_1": 18,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "сторона",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "страна",
+          "count_text_1": 36,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "участие",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "физический",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "член",
+          "count_text_1": 10,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "широкий",
+          "count_text_1": 4,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "экономический",
+          "count_text_1": 10,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "юг",
+          "count_text_1": 2,
+          "count_text_2": 8,
+          "min_count": 2
+        },
+        {
+          "word": "автомобильный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "административный",
+          "count_text_1": 1,
+          "count_text_2": 6,
+          "min_count": 1
+        },
+        {
+          "word": "астрономический",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "аэропорт",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "база",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "богатый",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "бой",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "быстрый",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "ввести",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "вводить",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "ведение",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "ведомство",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "век",
+          "count_text_1": 13,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "великий",
+          "count_text_1": 18,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "вид",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "включая",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "включена",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "власть",
+          "count_text_1": 11,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "вода",
+          "count_text_1": 1,
+          "count_text_2": 120,
+          "min_count": 1
+        },
+        {
+          "word": "возглавлять",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "воздушный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "возникнуть",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "возобновиться",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "возраст",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "воинский",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "война",
+          "count_text_1": 10,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "войти",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "вопрос",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "восстановить",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "впоследствии",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "всеобщий",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "вскоре",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "выйти",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "вынужденный",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "выпадать",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "выразить",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "высший",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "выше",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "главнокомандующий",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "государство",
+          "count_text_1": 25,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "густой",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "действие",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "действовать",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "дело",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "департамент",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "дефицит",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "деятельность",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "длинный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "должность",
+          "count_text_1": 1,
+          "count_text_2": 12,
+          "min_count": 1
+        },
+        {
+          "word": "достопримечательность",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "древнейший",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "древний",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "евро",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "европейский",
+          "count_text_1": 7,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "жить",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "заболевание",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "заключение",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "занимать",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "заниматься",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "земельный",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "земледелие",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "знать",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "значительно",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "значительный",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "идея",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "издавна",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "издание",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "изменение",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "иметься",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "империя",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "инженер",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "иногда",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "институт",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "интерес",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "исполнение",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "использование",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "использовать",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "источник",
+          "count_text_1": 1,
+          "count_text_2": 37,
+          "min_count": 1
+        },
+        {
+          "word": "каспийский",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "климат",
+          "count_text_1": 1,
+          "count_text_2": 11,
+          "min_count": 1
+        },
+        {
+          "word": "кодекс",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "контакт",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "континентальный",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "крупный",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "лес",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "летний",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "лечение",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "литература",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "лишь",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "медицина",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "местность",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "мир",
+          "count_text_1": 9,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "многий",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "мощный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "название",
+          "count_text_1": 8,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "наличие",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "наместник",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "направить",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "направление",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "народный",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "настоящий",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "научный",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "небольшой",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "немецкий",
+          "count_text_1": 7,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "необходимость",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "неэффективный",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "ниже",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "обмен",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "оборона",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "образовать",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "обширный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "объединение",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "обязанность",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "одесса",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "озеро",
+          "count_text_1": 1,
+          "count_text_2": 11,
+          "min_count": 1
+        },
+        {
+          "word": "оказаться",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "организация",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "осадки",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "освобождение",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "основание",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "основное",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "остальной",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "осуществляться",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "открытие",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "отличие",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "относиться",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "падение",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "перевести",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "передать",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "переименован",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "питание",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "побережье",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "поверхность",
+          "count_text_1": 1,
+          "count_text_2": 6,
+          "min_count": 1
+        },
+        {
+          "word": "погибнуть",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "подготовить",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "подписать",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "подчинение",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "поезд",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "полиция",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "полностью",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "половина",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "помощь",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "послевоенный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "правило",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "правление",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "право",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "председатель",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "представить",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "привести",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "признание",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "примерно",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "примечание",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "принц",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "принятый",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "приток",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "проводить",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "проводиться",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "промышленность",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "протекать",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "процедура",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "прямой",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "пункт",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "путь",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "работать",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "рабочий",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "развитие",
+          "count_text_1": 1,
+          "count_text_2": 8,
+          "min_count": 1
+        },
+        {
+          "word": "раздел",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "разделить",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "раздельный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "различный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "район",
+          "count_text_1": 1,
+          "count_text_2": 34,
+          "min_count": 1
+        },
+        {
+          "word": "ранее",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "раненый",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "регион",
+          "count_text_1": 1,
+          "count_text_2": 23,
+          "min_count": 1
+        },
+        {
+          "word": "регулярный",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "режим",
+          "count_text_1": 1,
+          "count_text_2": 8,
+          "min_count": 1
+        },
+        {
+          "word": "ресурс",
+          "count_text_1": 1,
+          "count_text_2": 8,
+          "min_count": 1
+        },
+        {
+          "word": "решение",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "род",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "родной",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "рука",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "свыше",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "связать",
+          "count_text_1": 1,
+          "count_text_2": 8,
+          "min_count": 1
+        },
+        {
+          "word": "северный",
+          "count_text_1": 1,
+          "count_text_2": 16,
+          "min_count": 1
+        },
+        {
+          "word": "северо",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "сельский",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "сентябрь",
+          "count_text_1": 8,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "середина",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "сила",
+          "count_text_1": 17,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "сильный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "скорость",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "смерть",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "собственно",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "создание",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "сообщение",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "соревнование",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "состоять",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "союз",
+          "count_text_1": 7,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "специальный",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "среднее",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "срок",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "срочный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "ссылка",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "ст",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "становиться",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "строение",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "строительный",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "строительство",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "существование",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "существовать",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "счет",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "считать",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "тело",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "темп",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "температура",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "тесный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "течение",
+          "count_text_1": 1,
+          "count_text_2": 6,
+          "min_count": 1
+        },
+        {
+          "word": "типа",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "точка",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "транспорт",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "транспортный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "три",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "труд",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "уйти",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "указать",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "умеренный",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "упоминаться",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "услуга",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "успешно",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "установить",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "установление",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "устройство",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "утвердить",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "фактически",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "фактор",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "форма",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "характеризоваться",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "характерный",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "химический",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "хозяйство",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "хотя",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "цензура",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "частично",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "частный",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "часто",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "черта",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "чёрный",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "экономика",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "эпоха",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "язык",
+          "count_text_1": 32,
+          "count_text_2": 1,
+          "min_count": 1
+        }
+      ]
+    },
+    "tf": {
+      "vocabulary_size": 2992,
+      "cosine_similarity": 0.283754195980268,
+      "top_terms": [
+        {
+          "key": "ru_1",
+          "title": "Литва",
+          "terms": [
+            {
+              "word": "год",
+              "tf": 0.040852130325814535
+            },
+            {
+              "word": "литва",
+              "tf": 0.03984962406015038
+            },
+            {
+              "word": "литовский",
+              "tf": 0.02406015037593985
+            },
+            {
+              "word": "страна",
+              "tf": 0.009022556390977444
+            },
+            {
+              "word": "язык",
+              "tf": 0.008020050125313283
+            },
+            {
+              "word": "население",
+              "tf": 0.007268170426065163
+            },
+            {
+              "word": "территория",
+              "tf": 0.007017543859649123
+            },
+            {
+              "word": "государство",
+              "tf": 0.006265664160401002
+            },
+            {
+              "word": "великий",
+              "tf": 0.004511278195488722
+            },
+            {
+              "word": "княжество",
+              "tf": 0.004511278195488722
+            },
+            {
+              "word": "ссср",
+              "tf": 0.004511278195488722
+            },
+            {
+              "word": "польский",
+              "tf": 0.004260651629072682
+            },
+            {
+              "word": "сила",
+              "tf": 0.004260651629072682
+            },
+            {
+              "word": "советский",
+              "tf": 0.004260651629072682
+            },
+            {
+              "word": "данные",
+              "tf": 0.0040100250626566416
+            }
+          ]
+        },
+        {
+          "key": "ru_2",
+          "title": "Кавказские Минеральные Воды",
+          "terms": [
+            {
+              "word": "вода",
+              "tf": 0.029225523623964928
+            },
+            {
+              "word": "минеральный",
+              "tf": 0.021188504627374573
+            },
+            {
+              "word": "год",
+              "tf": 0.020214320506575744
+            },
+            {
+              "word": "кавказский",
+              "tf": 0.013151485630784217
+            },
+            {
+              "word": "курорт",
+              "tf": 0.012664393570384803
+            },
+            {
+              "word": "кмв",
+              "tf": 0.012420847540185095
+            },
+            {
+              "word": "источник",
+              "tf": 0.009011203117389186
+            },
+            {
+              "word": "пятигорск",
+              "tf": 0.009011203117389186
+            },
+            {
+              "word": "район",
+              "tf": 0.008280565026790063
+            },
+            {
+              "word": "кисловодск",
+              "tf": 0.006819288845591817
+            },
+            {
+              "word": "курортный",
+              "tf": 0.0058451047247929854
+            },
+            {
+              "word": "регион",
+              "tf": 0.005601558694593278
+            },
+            {
+              "word": "директор",
+              "tf": 0.00535801266439357
+            },
+            {
+              "word": "территория",
+              "tf": 0.005114466634193863
+            },
+            {
+              "word": "гора",
+              "tf": 0.004870920603994155
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "en": {
+    "lang": "en",
+    "texts": [
+      {
+        "key": "en_1",
+        "title": "Anarchism",
+        "file": "rgr3/data/texts/en_1.txt",
+        "raw_tokens": 6790,
+        "raw_unique_tokens": 1914,
+        "normalized_tokens": 6790,
+        "normalized_unique_tokens": 1602,
+        "tokens_after_stopwords": 3880,
+        "unique_tokens": 1476,
+        "top_words": [
+          {
+            "word": "anarchist",
+            "count": 160
+          },
+          {
+            "word": "anarchism",
+            "count": 116
+          },
+          {
+            "word": "state",
+            "count": 74
+          },
+          {
+            "word": "movement",
+            "count": 38
+          },
+          {
+            "word": "political",
+            "count": 24
+          },
+          {
+            "word": "group",
+            "count": 24
+          },
+          {
+            "word": "society",
+            "count": 22
+          },
+          {
+            "word": "form",
+            "count": 22
+          },
+          {
+            "word": "anti",
+            "count": 22
+          },
+          {
+            "word": "current",
+            "count": 22
+          },
+          {
+            "word": "authority",
+            "count": 21
+          },
+          {
+            "word": "free",
+            "count": 21
+          },
+          {
+            "word": "century",
+            "count": 20
+          },
+          {
+            "word": "classical",
+            "count": 18
+          },
+          {
+            "word": "school",
+            "count": 17
+          }
+        ]
+      },
+      {
+        "key": "en_2",
+        "title": "Ayn Rand",
+        "file": "rgr3/data/texts/en_2.txt",
+        "raw_tokens": 6236,
+        "raw_unique_tokens": 1763,
+        "normalized_tokens": 6236,
+        "normalized_unique_tokens": 1537,
+        "tokens_after_stopwords": 3554,
+        "unique_tokens": 1408,
+        "top_words": [
+          {
+            "word": "rand",
+            "count": 175
+          },
+          {
+            "word": "american",
+            "count": 39
+          },
+          {
+            "word": "work",
+            "count": 33
+          },
+          {
+            "word": "philosopher",
+            "count": 32
+          },
+          {
+            "word": "novel",
+            "count": 29
+          },
+          {
+            "word": "review",
+            "count": 26
+          },
+          {
+            "word": "idea",
+            "count": 26
+          },
+          {
+            "word": "philosophy",
+            "count": 25
+          },
+          {
+            "word": "ayn",
+            "count": 23
+          },
+          {
+            "word": "writer",
+            "count": 23
+          },
+          {
+            "word": "state",
+            "count": 22
+          },
+          {
+            "word": "academic",
+            "count": 22
+          },
+          {
+            "word": "influence",
+            "count": 22
+          },
+          {
+            "word": "include",
+            "count": 21
+          },
+          {
+            "word": "book",
+            "count": 19
+          }
+        ]
+      }
+    ],
+    "one_hot": {
+      "vocabulary_size": 2395,
+      "ones_in_matrix": 2884,
+      "common_unique_words": 489,
+      "union_unique_words": 2395,
+      "jaccard_similarity": 0.20417536534446765,
+      "cosine_similarity": 0.3392066462142512,
+      "multiset_intersection_size": 1061,
+      "common_words": [
+        {
+          "word": "state",
+          "count_text_1": 74,
+          "count_text_2": 22,
+          "min_count": 22
+        },
+        {
+          "word": "political",
+          "count_text_1": 24,
+          "count_text_2": 19,
+          "min_count": 19
+        },
+        {
+          "word": "philosophical",
+          "count_text_1": 15,
+          "count_text_2": 14,
+          "min_count": 14
+        },
+        {
+          "word": "late",
+          "count_text_1": 13,
+          "count_text_2": 19,
+          "min_count": 13
+        },
+        {
+          "word": "century",
+          "count_text_1": 20,
+          "count_text_2": 12,
+          "min_count": 12
+        },
+        {
+          "word": "include",
+          "count_text_1": 12,
+          "count_text_2": 21,
+          "min_count": 12
+        },
+        {
+          "word": "first",
+          "count_text_1": 11,
+          "count_text_2": 14,
+          "min_count": 11
+        },
+        {
+          "word": "become",
+          "count_text_1": 10,
+          "count_text_2": 10,
+          "min_count": 10
+        },
+        {
+          "word": "libertarian",
+          "count_text_1": 10,
+          "count_text_2": 11,
+          "min_count": 10
+        },
+        {
+          "word": "take",
+          "count_text_1": 15,
+          "count_text_2": 10,
+          "min_count": 10
+        },
+        {
+          "word": "base",
+          "count_text_1": 9,
+          "count_text_2": 9,
+          "min_count": 9
+        },
+        {
+          "word": "form",
+          "count_text_1": 22,
+          "count_text_2": 9,
+          "min_count": 9
+        },
+        {
+          "word": "idea",
+          "count_text_1": 9,
+          "count_text_2": 26,
+          "min_count": 9
+        },
+        {
+          "word": "one",
+          "count_text_1": 9,
+          "count_text_2": 10,
+          "min_count": 9
+        },
+        {
+          "word": "individual",
+          "count_text_1": 14,
+          "count_text_2": 8,
+          "min_count": 8
+        },
+        {
+          "word": "influence",
+          "count_text_1": 8,
+          "count_text_2": 22,
+          "min_count": 8
+        },
+        {
+          "word": "movement",
+          "count_text_1": 38,
+          "count_text_2": 8,
+          "min_count": 8
+        },
+        {
+          "word": "work",
+          "count_text_1": 8,
+          "count_text_2": 33,
+          "min_count": 8
+        },
+        {
+          "word": "call",
+          "count_text_1": 7,
+          "count_text_2": 12,
+          "min_count": 7
+        },
+        {
+          "word": "early",
+          "count_text_1": 7,
+          "count_text_2": 12,
+          "min_count": 7
+        },
+        {
+          "word": "interest",
+          "count_text_1": 7,
+          "count_text_2": 9,
+          "min_count": 7
+        },
+        {
+          "word": "new",
+          "count_text_1": 7,
+          "count_text_2": 17,
+          "min_count": 7
+        },
+        {
+          "word": "oppose",
+          "count_text_1": 7,
+          "count_text_2": 7,
+          "min_count": 7
+        },
+        {
+          "word": "philosophy",
+          "count_text_1": 7,
+          "count_text_2": 25,
+          "min_count": 7
+        },
+        {
+          "word": "reject",
+          "count_text_1": 7,
+          "count_text_2": 9,
+          "min_count": 7
+        },
+        {
+          "word": "time",
+          "count_text_1": 7,
+          "count_text_2": 7,
+          "min_count": 7
+        },
+        {
+          "word": "two",
+          "count_text_1": 7,
+          "count_text_2": 8,
+          "min_count": 7
+        },
+        {
+          "word": "approach",
+          "count_text_1": 6,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "believe",
+          "count_text_1": 9,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "describe",
+          "count_text_1": 6,
+          "count_text_2": 18,
+          "min_count": 6
+        },
+        {
+          "word": "especially",
+          "count_text_1": 7,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "free",
+          "count_text_1": 21,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "human",
+          "count_text_1": 16,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "know",
+          "count_text_1": 9,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "lead",
+          "count_text_1": 10,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "moral",
+          "count_text_1": 6,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "philosopher",
+          "count_text_1": 6,
+          "count_text_2": 32,
+          "min_count": 6
+        },
+        {
+          "word": "view",
+          "count_text_1": 6,
+          "count_text_2": 10,
+          "min_count": 6
+        },
+        {
+          "word": "world",
+          "count_text_1": 14,
+          "count_text_2": 6,
+          "min_count": 6
+        },
+        {
+          "word": "anarchism",
+          "count_text_1": 116,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "argue",
+          "count_text_1": 7,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "art",
+          "count_text_1": 9,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "capitalism",
+          "count_text_1": 15,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "consider",
+          "count_text_1": 5,
+          "count_text_2": 15,
+          "min_count": 5
+        },
+        {
+          "word": "contemporary",
+          "count_text_1": 15,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "ethics",
+          "count_text_1": 5,
+          "count_text_2": 10,
+          "min_count": 5
+        },
+        {
+          "word": "history",
+          "count_text_1": 5,
+          "count_text_2": 7,
+          "min_count": 5
+        },
+        {
+          "word": "scholar",
+          "count_text_1": 7,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "social",
+          "count_text_1": 15,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "system",
+          "count_text_1": 5,
+          "count_text_2": 5,
+          "min_count": 5
+        },
+        {
+          "word": "unite",
+          "count_text_1": 5,
+          "count_text_2": 11,
+          "min_count": 5
+        },
+        {
+          "word": "activist",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "anti",
+          "count_text_1": 22,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "associate",
+          "count_text_1": 6,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "book",
+          "count_text_1": 4,
+          "count_text_2": 19,
+          "min_count": 4
+        },
+        {
+          "word": "claim",
+          "count_text_1": 6,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "communist",
+          "count_text_1": 8,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "end",
+          "count_text_1": 8,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "establish",
+          "count_text_1": 7,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "find",
+          "count_text_1": 5,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "good",
+          "count_text_1": 4,
+          "count_text_2": 5,
+          "min_count": 4
+        },
+        {
+          "word": "government",
+          "count_text_1": 8,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "ideal",
+          "count_text_1": 7,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "libertarianism",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "non",
+          "count_text_1": 8,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "read",
+          "count_text_1": 4,
+          "count_text_2": 7,
+          "min_count": 4
+        },
+        {
+          "word": "right",
+          "count_text_1": 4,
+          "count_text_2": 15,
+          "min_count": 4
+        },
+        {
+          "word": "russian",
+          "count_text_1": 4,
+          "count_text_2": 14,
+          "min_count": 4
+        },
+        {
+          "word": "school",
+          "count_text_1": 17,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "second",
+          "count_text_1": 4,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "see",
+          "count_text_1": 12,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "society",
+          "count_text_1": 22,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "support",
+          "count_text_1": 4,
+          "count_text_2": 11,
+          "min_count": 4
+        },
+        {
+          "word": "theory",
+          "count_text_1": 13,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "turn",
+          "count_text_1": 6,
+          "count_text_2": 4,
+          "min_count": 4
+        },
+        {
+          "word": "academic",
+          "count_text_1": 3,
+          "count_text_2": 22,
+          "min_count": 3
+        },
+        {
+          "word": "advocate",
+          "count_text_1": 13,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "against",
+          "count_text_1": 15,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "argument",
+          "count_text_1": 7,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "artist",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "association",
+          "count_text_1": 5,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "attempt",
+          "count_text_1": 4,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "collectivism",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "criticism",
+          "count_text_1": 10,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "critique",
+          "count_text_1": 10,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "despite",
+          "count_text_1": 3,
+          "count_text_2": 6,
+          "min_count": 3
+        },
+        {
+          "word": "different",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "focus",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "force",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "found",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "group",
+          "count_text_1": 24,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "involve",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "john",
+          "count_text_1": 3,
+          "count_text_2": 8,
+          "min_count": 3
+        },
+        {
+          "word": "limit",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "live",
+          "count_text_1": 3,
+          "count_text_2": 6,
+          "min_count": 3
+        },
+        {
+          "word": "major",
+          "count_text_1": 8,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "man",
+          "count_text_1": 3,
+          "count_text_2": 11,
+          "min_count": 3
+        },
+        {
+          "word": "member",
+          "count_text_1": 7,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "negative",
+          "count_text_1": 3,
+          "count_text_2": 7,
+          "min_count": 3
+        },
+        {
+          "word": "party",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "people",
+          "count_text_1": 7,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "politics",
+          "count_text_1": 3,
+          "count_text_2": 6,
+          "min_count": 3
+        },
+        {
+          "word": "problem",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "production",
+          "count_text_1": 3,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "question",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "reaction",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "revolution",
+          "count_text_1": 15,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "say",
+          "count_text_1": 3,
+          "count_text_2": 19,
+          "min_count": 3
+        },
+        {
+          "word": "self",
+          "count_text_1": 8,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "set",
+          "count_text_1": 4,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "thought",
+          "count_text_1": 12,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "three",
+          "count_text_1": 3,
+          "count_text_2": 7,
+          "min_count": 3
+        },
+        {
+          "word": "throughout",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "tradition",
+          "count_text_1": 7,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "war",
+          "count_text_1": 14,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "widely",
+          "count_text_1": 3,
+          "count_text_2": 4,
+          "min_count": 3
+        },
+        {
+          "word": "william",
+          "count_text_1": 5,
+          "count_text_2": 3,
+          "min_count": 3
+        },
+        {
+          "word": "woman",
+          "count_text_1": 3,
+          "count_text_2": 14,
+          "min_count": 3
+        },
+        {
+          "word": "accept",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "accord",
+          "count_text_1": 7,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "beginning",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "close",
+          "count_text_1": 2,
+          "count_text_2": 6,
+          "min_count": 2
+        },
+        {
+          "word": "come",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "common",
+          "count_text_1": 8,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "contribute",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "create",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "culture",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "decade",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "define",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "element",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "empire",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "engage",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "england",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "english",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "essay",
+          "count_text_1": 2,
+          "count_text_2": 6,
+          "min_count": 2
+        },
+        {
+          "word": "exist",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "expand",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "far",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "fiction",
+          "count_text_1": 2,
+          "count_text_2": 17,
+          "min_count": 2
+        },
+        {
+          "word": "figure",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "follow",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "give",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "hold",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "intellectual",
+          "count_text_1": 2,
+          "count_text_2": 6,
+          "min_count": 2
+        },
+        {
+          "word": "international",
+          "count_text_1": 10,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "largely",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "left",
+          "count_text_1": 12,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "less",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "liberal",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "life",
+          "count_text_1": 2,
+          "count_text_2": 12,
+          "min_count": 2
+        },
+        {
+          "word": "living",
+          "count_text_1": 2,
+          "count_text_2": 8,
+          "min_count": 2
+        },
+        {
+          "word": "long",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "love",
+          "count_text_1": 8,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "make",
+          "count_text_1": 7,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "market",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "meet",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "modern",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "move",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "opposition",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "out",
+          "count_text_1": 2,
+          "count_text_2": 5,
+          "min_count": 2
+        },
+        {
+          "word": "part",
+          "count_text_1": 8,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "particularly",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "play",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "private",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "promote",
+          "count_text_1": 2,
+          "count_text_2": 6,
+          "min_count": 2
+        },
+        {
+          "word": "property",
+          "count_text_1": 5,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "reason",
+          "count_text_1": 2,
+          "count_text_2": 8,
+          "min_count": 2
+        },
+        {
+          "word": "refer",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "rejection",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "relationship",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "religion",
+          "count_text_1": 2,
+          "count_text_2": 4,
+          "min_count": 2
+        },
+        {
+          "word": "rest",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "robert",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "role",
+          "count_text_1": 7,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "sense",
+          "count_text_1": 2,
+          "count_text_2": 3,
+          "min_count": 2
+        },
+        {
+          "word": "series",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "significant",
+          "count_text_1": 8,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "soviet",
+          "count_text_1": 2,
+          "count_text_2": 5,
+          "min_count": 2
+        },
+        {
+          "word": "strike",
+          "count_text_1": 6,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "struggle",
+          "count_text_1": 3,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "student",
+          "count_text_1": 2,
+          "count_text_2": 6,
+          "min_count": 2
+        },
+        {
+          "word": "study",
+          "count_text_1": 2,
+          "count_text_2": 10,
+          "min_count": 2
+        },
+        {
+          "word": "teach",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "union",
+          "count_text_1": 2,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "use",
+          "count_text_1": 12,
+          "count_text_2": 2,
+          "min_count": 2
+        },
+        {
+          "word": "write",
+          "count_text_1": 2,
+          "count_text_2": 15,
+          "min_count": 2
+        },
+        {
+          "word": "writer",
+          "count_text_1": 2,
+          "count_text_2": 23,
+          "min_count": 2
+        },
+        {
+          "word": "able",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "academia",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "accuse",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "achieve",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "acknowledge",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "acquire",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "active",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "activism",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "activity",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "add",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "adopt",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "aesthetic",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "afterwards",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "allow",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "america",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "american",
+          "count_text_1": 1,
+          "count_text_2": 39,
+          "min_count": 1
+        },
+        {
+          "word": "andrew",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "anything",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "appear",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "area",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "army",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "ascetic",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "aspect",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "assert",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "attention",
+          "count_text_1": 1,
+          "count_text_2": 6,
+          "min_count": 1
+        },
+        {
+          "word": "attitude",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "author",
+          "count_text_1": 1,
+          "count_text_2": 8,
+          "min_count": 1
+        },
+        {
+          "word": "begin",
+          "count_text_1": 1,
+          "count_text_2": 6,
+          "min_count": 1
+        },
+        {
+          "word": "birth",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "bolshevik",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "bomb",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "bourgeois",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "branch",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "break",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "bring",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "broad",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "build",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "canada",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "career",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "challenge",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "change",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "character",
+          "count_text_1": 1,
+          "count_text_2": 8,
+          "min_count": 1
+        },
+        {
+          "word": "child",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "choice",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "cite",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "citizen",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "city",
+          "count_text_1": 1,
+          "count_text_2": 6,
+          "min_count": 1
+        },
+        {
+          "word": "civil",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "classical",
+          "count_text_1": 18,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "cold",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "collectivist",
+          "count_text_1": 7,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "college",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "commentator",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "committee",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "commonly",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "communism",
+          "count_text_1": 8,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "complete",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "concept",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "concern",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "condition",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "conflict",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "congress",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "consciousness",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "construct",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "continue",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "continuous",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "control",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "controversial",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "core",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "course",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "creation",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "critical",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "david",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "day",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "declare",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "defend",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "definition",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "demonstration",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "depict",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "destruction",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "develop",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "develope",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "development",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "dichotomy",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "direct",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "disagree",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "disagreement",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "discuss",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "dismiss",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "dispute",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "disrupt",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "distribute",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "doctor",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "down",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "drug",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "duty",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "easy",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "economic",
+          "count_text_1": 7,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "educate",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "emotion",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "emphasis",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "emphasize",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "employ",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "ending",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "endorse",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "essence",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "ethical",
+          "count_text_1": 1,
+          "count_text_2": 7,
+          "min_count": 1
+        },
+        {
+          "word": "event",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "evil",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "existence",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "experience",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "external",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "fail",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "failure",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "fascism",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "fascist",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "feature",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "federal",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "feminism",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "fight",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "fit",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "flee",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "follower",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "following",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "former",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "forum",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "foundation",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "founder",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "friedrich",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "friendly",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "further",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "future",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "gan",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "generally",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "generation",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "go",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "greatly",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "grow",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "guide",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "handle",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "hate",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "help",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "henry",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "high",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "highly",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "house",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "huemer",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "ideological",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "illustrate",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "important",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "independent",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "individualist",
+          "count_text_1": 8,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "influential",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "inspiration",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "inspire",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "instead",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "involvement",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "issue",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "journal",
+          "count_text_1": 1,
+          "count_text_2": 7,
+          "min_count": 1
+        },
+        {
+          "word": "judgment",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "justify",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "keep",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "lack",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "land",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "large",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "last",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "laud",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "law",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "leader",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "learn",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "library",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "like",
+          "count_text_1": 1,
+          "count_text_2": 7,
+          "min_count": 1
+        },
+        {
+          "word": "likely",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "line",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "link",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "list",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "literature",
+          "count_text_1": 1,
+          "count_text_2": 8,
+          "min_count": 1
+        },
+        {
+          "word": "little",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "main",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "mainstream",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "mark",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "medium",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "mention",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "message",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "michael",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "mind",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "minimal",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "misunderstanding",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "mostly",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "music",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "naive",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "name",
+          "count_text_1": 1,
+          "count_text_2": 10,
+          "min_count": 1
+        },
+        {
+          "word": "nation",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "neill",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "next",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "night",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "notably",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "note",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "novel",
+          "count_text_1": 1,
+          "count_text_2": 29,
+          "min_count": 1
+        },
+        {
+          "word": "nozick",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "objection",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "october",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "open",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "opinion",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "order",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "organization",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "organize",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "overall",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "participate",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "pay",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "perception",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "perform",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "perspective",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "peter",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "petrograd",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "phenomenon",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "place",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "policy",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "popular",
+          "count_text_1": 1,
+          "count_text_2": 7,
+          "min_count": 1
+        },
+        {
+          "word": "positive",
+          "count_text_1": 1,
+          "count_text_2": 7,
+          "min_count": 1
+        },
+        {
+          "word": "power",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "practice",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "preservation",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "press",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "previous",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "primary",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "principle",
+          "count_text_1": 16,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "pro",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "process",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "produce",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "protect",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "protection",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "protest",
+          "count_text_1": 8,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "provide",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "public",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "publication",
+          "count_text_1": 1,
+          "count_text_2": 6,
+          "min_count": 1
+        },
+        {
+          "word": "publish",
+          "count_text_1": 1,
+          "count_text_2": 14,
+          "min_count": 1
+        },
+        {
+          "word": "qua",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "radical",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "range",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "rank",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "reference",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "reflect",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "reinstate",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "relate",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "release",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "religious",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "renew",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "replace",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "republican",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "research",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "resemble",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "resolve",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "response",
+          "count_text_1": 5,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "return",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "romanticism",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "rose",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "russia",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "sale",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "scene",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "science",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "scientist",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "secondary",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "security",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "sexuality",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "shape",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "sharply",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "show",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "similar",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "single",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "socialism",
+          "count_text_1": 7,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "solve",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "specific",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "spread",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "style",
+          "count_text_1": 1,
+          "count_text_2": 4,
+          "min_count": 1
+        },
+        {
+          "word": "subject",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "success",
+          "count_text_1": 1,
+          "count_text_2": 5,
+          "min_count": 1
+        },
+        {
+          "word": "suggest",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "survival",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "tenet",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "term",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "theorist",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "thinker",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "thomas",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "treat",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "try",
+          "count_text_1": 3,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "typically",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        },
+        {
+          "word": "unrealistic",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "usage",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "usually",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "value",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "version",
+          "count_text_1": 1,
+          "count_text_2": 3,
+          "min_count": 1
+        },
+        {
+          "word": "video",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "way",
+          "count_text_1": 7,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "white",
+          "count_text_1": 2,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "wide",
+          "count_text_1": 4,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "wing",
+          "count_text_1": 6,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "witness",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "wolff",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "word",
+          "count_text_1": 1,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "worker",
+          "count_text_1": 10,
+          "count_text_2": 1,
+          "min_count": 1
+        },
+        {
+          "word": "young",
+          "count_text_1": 1,
+          "count_text_2": 2,
+          "min_count": 1
+        }
+      ]
+    },
+    "tf": {
+      "vocabulary_size": 2395,
+      "cosine_similarity": 0.1873882714934855,
+      "top_terms": [
+        {
+          "key": "en_1",
+          "title": "Anarchism",
+          "terms": [
+            {
+              "word": "anarchist",
+              "tf": 0.041237113402061855
+            },
+            {
+              "word": "anarchism",
+              "tf": 0.029896907216494847
+            },
+            {
+              "word": "state",
+              "tf": 0.01907216494845361
+            },
+            {
+              "word": "movement",
+              "tf": 0.00979381443298969
+            },
+            {
+              "word": "group",
+              "tf": 0.006185567010309278
+            },
+            {
+              "word": "political",
+              "tf": 0.006185567010309278
+            },
+            {
+              "word": "anti",
+              "tf": 0.005670103092783505
+            },
+            {
+              "word": "current",
+              "tf": 0.005670103092783505
+            },
+            {
+              "word": "form",
+              "tf": 0.005670103092783505
+            },
+            {
+              "word": "society",
+              "tf": 0.005670103092783505
+            },
+            {
+              "word": "authority",
+              "tf": 0.005412371134020618
+            },
+            {
+              "word": "free",
+              "tf": 0.005412371134020618
+            },
+            {
+              "word": "century",
+              "tf": 0.005154639175257732
+            },
+            {
+              "word": "classical",
+              "tf": 0.004639175257731959
+            },
+            {
+              "word": "school",
+              "tf": 0.004381443298969072
+            }
+          ]
+        },
+        {
+          "key": "en_2",
+          "title": "Ayn Rand",
+          "terms": [
+            {
+              "word": "rand",
+              "tf": 0.04924029262802476
+            },
+            {
+              "word": "american",
+              "tf": 0.010973550928531233
+            },
+            {
+              "word": "work",
+              "tf": 0.009285312324141813
+            },
+            {
+              "word": "philosopher",
+              "tf": 0.009003939223410242
+            },
+            {
+              "word": "novel",
+              "tf": 0.008159819921215531
+            },
+            {
+              "word": "idea",
+              "tf": 0.007315700619020821
+            },
+            {
+              "word": "review",
+              "tf": 0.007315700619020821
+            },
+            {
+              "word": "philosophy",
+              "tf": 0.007034327518289252
+            },
+            {
+              "word": "ayn",
+              "tf": 0.006471581316826111
+            },
+            {
+              "word": "writer",
+              "tf": 0.006471581316826111
+            },
+            {
+              "word": "academic",
+              "tf": 0.0061902082160945416
+            },
+            {
+              "word": "influence",
+              "tf": 0.0061902082160945416
+            },
+            {
+              "word": "state",
+              "tf": 0.0061902082160945416
+            },
+            {
+              "word": "include",
+              "tf": 0.005908835115362971
+            },
+            {
+              "word": "book",
+              "tf": 0.005346088913899831
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

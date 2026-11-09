@@ -1,0 +1,3 @@
+language,text_1,text_2,tokens_1,tokens_2,unique_1,unique_2,common_unique,multiset_intersection,jaccard,cosine_one_hot,cosine_tf
+ru,Литва,Кавказские Минеральные Воды,3990,4106,1745,1659,412,900,0.137701,0.242145,0.283754
+en,Anarchism,Ayn Rand,3880,3554,1476,1408,489,1061,0.204175,0.339207,0.187388
